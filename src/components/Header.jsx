@@ -41,42 +41,44 @@ function Header() {
                 <NavLink to="/Home">FinanceHub</NavLink>
               </h1>
             </div>
-            <div className="Header__nav">
-              <ul className="Header__list" onClick={ActiveLinks}>
-                <li className="Header__item">
-                  <NavLink
-                    to="/Home"
-                    className={({ isActive }) =>
-                      isActive ? "Header__link active" : "Header__link"
-                    }
-                  >
-                    Главная
-                  </NavLink>
-                </li>
-                <li className="Header__item">
-                  <button
-                    className="Header__link"
-                    onClick={handleUserPageClick}
-                  >
-                    Моя страница
+            <div className="Header__burger">
+              <div className="Header__nav">
+                <ul className="Header__list" onClick={ActiveLinks}>
+                  <li className="Header__item">
+                    <NavLink
+                      to="/Home"
+                      className={({ isActive }) =>
+                        isActive ? "Header__link active" : "Header__link"
+                      }
+                    >
+                      Главная
+                    </NavLink>
+                  </li>
+                  <li className="Header__item">
+                    <button
+                      className="Header__link"
+                      onClick={handleUserPageClick}
+                    >
+                      Моя страница
+                    </button>
+                  </li>
+                  <li className="Header__item">
+                    <NavLink to="/" className="Header__link">
+                      Поддержка
+                    </NavLink>
+                  </li>
+                </ul>
+              </div>
+              <div className="Header__buttons">
+                <NavLink to="/SignIn">
+                  <button className="Header__button--sign-in">Войти</button>
+                </NavLink>
+                <NavLink to="/Register">
+                  <button className="Header__button--sign-up">
+                    Зарегестрироваться
                   </button>
-                </li>
-                <li className="Header__item">
-                  <NavLink to="/" className="Header__link">
-                    Поддержка
-                  </NavLink>
-                </li>
-              </ul>
-            </div>
-            <div className="Header__buttons">
-              <NavLink to="/SignIn">
-                <button className="Header__button--sign-in">Войти</button>
-              </NavLink>
-              <NavLink to="/Register">
-                <button className="Header__button--sign-up">
-                  Зарегестрироваться
-                </button>
-              </NavLink>
+                </NavLink>
+              </div>
             </div>
           </div>
         </div>

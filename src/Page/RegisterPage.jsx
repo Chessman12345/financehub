@@ -16,10 +16,6 @@ function RegisterPage() {
 
   const handleRegister = async (e) => {
     e.preventDefault();
-    if (password !== confirmPassword) {
-      alert("Пароли не совподают!");
-      return;
-    }
 
     try {
       const userCredential = await createUserWithEmailAndPassword(
@@ -55,6 +51,13 @@ function RegisterPage() {
       navigate(`/UserPage/${user.uid}`);
     } catch {
       console.log(error.message);
+    }
+  };
+
+  const checkPassword = () => {
+    if (password !== confirmPassword) {
+      alert("Пароли не совподают!");
+      return;
     }
   };
 
@@ -133,7 +136,11 @@ function RegisterPage() {
                   required
                 />
               </div>
-              <button className="RegisterPage__main-gmail-signup" type="submit">
+              <button
+                className="RegisterPage__main-gmail-signup"
+                type="submit"
+                onClick={checkPassword}
+              >
                 Зарегестрироваться
               </button>
               <div className="RegisterPage__main-gmail-signin">
