@@ -1,0 +1,82 @@
+.Header {
+    padding: 40px 0;
+}
+
+.Header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Header__title h1 a {
+    font-size: 40px;
+}
+
+.Header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.Header__list {
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+}
+
+.Header__link {
+    border-bottom: 5px solid transparent;
+    outline: none;
+    transition: .2s;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+.Header__link:hover {
+    color: #6fb98f;
+}
+
+.Header__link.active {
+    color: #6fb98f;
+    border-bottom: 5px solid #6fb98f;
+}
+
+.Header__buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.Header__buttons button {
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-family: 'Hero';
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.Header__button--sign-in {
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+.Header__button--sign-in:hover {
+    border: 2px solid white;
+    background-color: white;
+    color: #0050ff;
+}
+
+.Header__button--sign-up {
+    border: 2px solid #6fb98f;
+    background-color: #6fb98f;
+    transition: 0.3s;
+}
+
+.Header__button--sign-up:hover {
+    border: 2px solid white;
+    background-color: white;
+    color: #0050ff;
+}
+
+button {
+    border: none;
+    font-size: 15px;
+}

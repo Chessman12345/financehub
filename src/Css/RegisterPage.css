@@ -1,0 +1,115 @@
+.RegisterPage__header--title h1 {
+    font-size: 30px;
+}
+
+.RegisterPage__header {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.RegisterPage__header--haveAnAccount {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.RegisterPage__header--haveAnAccount-signin {
+    border: 2px solid white;
+    transition: 0.3s;
+    border-radius: 40px;
+    padding: 10px 20px;
+    font-family: 'Hero';
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.RegisterPage__header--haveAnAccount-signin:hover {
+    border: 2px solid white;
+    background-color: white;
+    color: #0050ff;
+}
+
+.RegisterPage__main-title {
+    margin-bottom: 40px;
+}
+
+.RegisterPage__main {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.RegisterPage__main-google {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid white;
+    outline: none;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.RegisterPage__main-google-icon img {
+    width: 30px;
+}
+
+form {
+    width: 372px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.RegisterPage__main-gmail-input {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 10px;
+}
+
+.RegisterPage__main-gmail-input input {
+    border: 2px solid rgb(79, 79, 79);
+    padding: 20px;
+    outline: none;
+    border-radius: 5px;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.RegisterPage__main-gmail-input input::placeholder {
+    font-family: 'Hero';
+    letter-spacing: 1px;
+    color: rgb(179, 179, 179);
+    font-size: 15px;
+}
+
+.RegisterPage__main-gmail-input input:focus {
+    border: 2px solid #6fb98f;
+}
+
+.RegisterPage__main-gmail-signup {
+    padding: 20px 0;
+    border: 2px solid #6fb98f;
+    background-color: #6fb98f;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+h5 {
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    color: rgb(179, 179, 179);
+}
+
+h5 a {
+    color: #6fb98f;
+}
+
+.RegisterPage__main-gmail-signin {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
