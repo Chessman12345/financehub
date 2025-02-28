@@ -16,6 +16,10 @@ function RegisterPage() {
 
   const handleRegister = async (e) => {
     e.preventDefault();
+    if (password !== confirmPassword) {
+      console.log("Пароли не совподают!");
+      return;
+    }
 
     try {
       const userCredential = await createUserWithEmailAndPassword(
@@ -54,12 +58,7 @@ function RegisterPage() {
     }
   };
 
-  const checkPassword = () => {
-    if (password !== confirmPassword) {
-      alert("Пароли не совподают!");
-      return;
-    }
-  };
+  const checkPassword = () => {};
 
   return (
     <>
