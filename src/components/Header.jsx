@@ -6,6 +6,8 @@ import { auth } from "../firebase/config";
 
 function Header() {
   const [user, setUser] = useState(null);
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -21,6 +23,10 @@ function Header() {
     } else {
       navigate("/SignIn");
     }
+  };
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
   };
 
   const ActiveLinks = (e) => {
@@ -42,8 +48,19 @@ function Header() {
               </h1>
             </div>
             <div className="Header__burger">
+              <button
+                className={`Header__burger-menu ${menuOpen ? "open" : ""}`}
+                onClick={toggleMenu}
+              >
+                <div className="Header__burger-menu-span"></div>
+                <div className="Header__burger-menu-span"></div>
+                <div className="Header__burger-menu-span"></div>
+              </button>
               <div className="Header__nav">
-                <ul className="Header__list" onClick={ActiveLinks}>
+                <ul
+                  className={`Header__list ${menuOpen ? "activeList" : ""}`}
+                  onClick={ActiveLinks}
+                >
                   <li className="Header__item">
                     <NavLink
                       to="/Home"
@@ -67,17 +84,17 @@ function Header() {
                       Поддержка
                     </NavLink>
                   </li>
+                  <div className="Header__buttons">
+                    <NavLink to="/SignIn">
+                      <button className="Header__button--sign-in">Войти</button>
+                    </NavLink>
+                    <NavLink to="/Register">
+                      <button className="Header__button--sign-up">
+                        Зарегестрироваться
+                      </button>
+                    </NavLink>
+                  </div>
                 </ul>
-              </div>
-              <div className="Header__buttons">
-                <NavLink to="/SignIn">
-                  <button className="Header__button--sign-in">Войти</button>
-                </NavLink>
-                <NavLink to="/Register">
-                  <button className="Header__button--sign-up">
-                    Зарегестрироваться
-                  </button>
-                </NavLink>
               </div>
             </div>
           </div>

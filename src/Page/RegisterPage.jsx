@@ -58,8 +58,6 @@ function RegisterPage() {
     }
   };
 
-  const checkPassword = () => {};
-
   return (
     <>
       <div className="RegisterPage">
@@ -135,11 +133,7 @@ function RegisterPage() {
                   required
                 />
               </div>
-              <button
-                className="RegisterPage__main-gmail-signup"
-                type="submit"
-                onClick={checkPassword}
-              >
+              <button className="RegisterPage__main-gmail-signup" type="submit">
                 Зарегестрироваться
               </button>
               <div className="RegisterPage__main-gmail-signin">
