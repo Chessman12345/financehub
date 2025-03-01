@@ -35,6 +35,10 @@
     margin-bottom: 40px;
 }
 
+.RegisterPage__main-gmail {
+    padding: 50px 0;
+}
+
 .RegisterPage__main {
     padding: 30px 0;
     display: flex;
@@ -100,6 +104,8 @@ form {
 }
 
 h5 {
+    padding: 10px 0;
+    margin: 0;
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     color: rgb(179, 179, 179);
 }
@@ -127,14 +133,18 @@ h5 a {
     }
 
     .RegisterPage__main-title {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     form {
         width: 260px;
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 12px;
+    }
+
+    .RegisterPage__main-gmail-input input {
+        padding: 10px;
     }
 
     .RegisterPage__header--haveAnAccount {
@@ -146,7 +156,7 @@ h5 a {
     }
 
     label {
-        font-size: 14px;
+        font-size: 11px;
     }
 
     input {
@@ -154,6 +164,42 @@ h5 a {
     }
 
     .RegisterPage__main-gmail-input input::placeholder {
+        font-size: 10px;
+    }
+
+    .RegisterPage__main {
+        padding: 30px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .RegisterPage__main-gmail-signup {
+        margin-top: 10px;
+        padding: 15px;
         font-size: 12px;
+    }
+
+    .RegisterPage__main-google {
+        padding: 15px;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .RegisterPage__main-google button {
+        font-size: 11px;
+    }
+
+    .RegisterPage__main-google-icon img {
+        width: 20px;
+    }
+
+    .RegisterPage__main-gmail-signin {
+        font-size: 14px;
+    }
+
+    .RegisterPage__main-gmail-input {
+        gap: 5px;
     }
 }
