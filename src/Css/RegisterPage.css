@@ -113,3 +113,47 @@ h5 a {
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 480px) {
+
+    .RegisterPage__main-google-text {
+        font-size: 12px;
+    }
+
+    .RegisterPage__header {
+        padding: 5px 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .RegisterPage__main-title {
+        margin-bottom: 20px;
+    }
+
+    form {
+        width: 260px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .RegisterPage__header--haveAnAccount {
+        display: none;
+    }
+
+    .RegisterPage__main-title h2 {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input {
+        font-size: 12px;
+    }
+
+    .RegisterPage__main-gmail-input input::placeholder {
+        font-size: 12px;
+    }
+}
