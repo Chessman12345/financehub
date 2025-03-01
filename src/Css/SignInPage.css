@@ -126,3 +126,87 @@ h5 a {
 .SignInPage__main-title {
     text-align: center;
 }
+
+@media (max-width: 480px) {
+
+    .SignInPage__main-google-text {
+        font-size: 11px;
+    }
+
+    .SignInPage__header {
+        padding: 5px 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .SignInPage__main-title {
+        margin-bottom: 10px;
+    }
+
+    form {
+        width: 260px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .SignInPage__main-gmail-input input {
+        padding: 10px;
+    }
+
+    .SignInPage__header--haveAnAccount {
+        display: none;
+    }
+
+    .SignInPage__main-title h2 {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 11px;
+    }
+
+    input {
+        font-size: 12px;
+    }
+
+    .SignInPage__main-gmail-input input::placeholder {
+        font-size: 10px;
+    }
+
+    .SignInPage__main {
+        padding: 30px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .SignInPage__main-gmail-signup {
+        margin-top: 10px;
+        padding: 15px;
+        font-size: 12px;
+    }
+
+    .SignInPage__main-google {
+        padding: 15px;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .SignInPage__main-google button {
+        font-size: 11px;
+    }
+
+    .SignInPage__main-google-icon img {
+        width: 20px;
+    }
+
+    .SignInPage__main-gmail-signin {
+        font-size: 14px;
+    }
+
+    .SignInPage__main-gmail-input {
+        gap: 5px;
+    }
+}
