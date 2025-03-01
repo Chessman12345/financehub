@@ -212,4 +212,13 @@ a {
         font-size: 14px;
         letter-spacing: 0.5px;
     }
+
+    .Header__list {
+        gap: 60px;
+        margin-bottom: 100px;
+    }
+
+    .Header__link {
+        font-size: 16px;
+    }
 }
