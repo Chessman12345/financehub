@@ -71,16 +71,11 @@ function Header() {
                       Главная
                     </NavLink>
                   </li>
-                  <li className="Header__item">
-                    <button
-                      className="Header__link"
-                      onClick={handleUserPageClick}
-                    >
-                      Моя страница
-                    </button>
+                  <li className="Header__item" onClick={handleUserPageClick}>
+                    Моя страница
                   </li>
                   <li className="Header__item">
-                    <NavLink to="/" className="Header__link">
+                    <NavLink to="/Support" className="Header__link">
                       Поддержка
                     </NavLink>
                   </li>

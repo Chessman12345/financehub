@@ -8,6 +8,7 @@ import Wrapper from "./components/Wrapper";
 import UserPage from "./Page/UserPage";
 
 import "./App.css";
+import Support from "./Page/Support";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Wrapper />}>
             <Route index element={<Navigate to="/Home" replace />} />
             <Route path="Home" element={<HomePage />} />
+            <Route path="Support" element={<Support />} />
           </Route>
           <Route path="/UserPage/:uid" element={<UserPage />} />
           <Route path="/SignIn" element={<SignInPage />} />

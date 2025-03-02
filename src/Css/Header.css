@@ -19,10 +19,13 @@
 .Header__nav {
     display: flex;
     align-items: center;
+    /* justify-content: space-between; */
+    background-color: #fff;
 }
 
 .Header__list {
     display: flex;
+    align-items: center;
     /* display: none; */
     gap: 40px;
     font-size: 20px;
@@ -60,7 +63,15 @@
     font-size: 20px;
 }
 
+.Header__item {
+    transition: .2s;
+}
+
 .Header__link:hover {
+    color: #6fb98f;
+}
+
+.Header__item:hover {
     color: #6fb98f;
 }
 
@@ -194,6 +205,13 @@ a {
 }
 
 @media (max-width:760px) {
+
+    .Header__title {
+        width: 100%;
+        background-color: #fff;
+        text-align: center;
+    }
+
     .Header__title {
         padding-right: 20px;
     }

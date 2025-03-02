@@ -120,6 +120,18 @@ h5 a {
     justify-content: center;
 }
 
+@media (max-width: 760px) {
+    .RegisterPage__header--haveAnAccount {
+        display: none;
+    }
+
+    .RegisterPage__header--title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
 @media (max-width: 480px) {
 
     .RegisterPage__main-google-text {
@@ -147,9 +159,7 @@ h5 a {
         padding: 10px;
     }
 
-    .RegisterPage__header--haveAnAccount {
-        display: none;
-    }
+
 
     .RegisterPage__main-title h2 {
         font-size: 20px;
