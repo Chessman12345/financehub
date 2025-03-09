@@ -100,7 +100,7 @@ function SignInPage() {
       </div>
       <div className="SignInPage__main">
         <div className="SignInPage__main-gmail">
-          <form onClick={handleLogin}>
+          <form onClick={handleLogin} className="form">
             <div className="SignInPage__main-title">
               <h2>Войти</h2>
             </div>

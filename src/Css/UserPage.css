@@ -1,0 +1,262 @@
+.container-userpage {
+    max-width: 1830px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+.UserPage__header {
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.UserPage__header-title {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.UserPage__header-title-popup p {
+    /* color: lightgrey; */
+    color: #00B28E;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    font-family: 'Hero';
+    background-color: inherit;
+}
+
+
+.UserPage__header-title-popup {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    padding: 0 5px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.UserPage__header-title-popup:hover {
+    background-color: rgba(72, 72, 72);
+}
+
+.UserPage__header-title-popup--svg {
+    transform: rotate(180deg);
+    background-color: inherit;
+    border-radius: 50px;
+}
+
+.UserPage__header-title-popup--svg.rotated {
+    transform: rotate(0deg);
+}
+
+.UserPage__header-buttons {
+    display: flex;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.UserPage__header-button-expense {
+    padding: 15px 30px;
+    border-radius: 15px;
+    background-color: rgba(255, 0, 0, 0.25);
+    letter-spacing: 2px;
+    font-family: 'Hero';
+    /* color: #ff6d49; */
+    color: #FF8D70;
+    font-size: 17px;
+}
+
+.UserPage__header-button-expense span {
+    background-color: rgba(255, 0, 0, 0.01);
+    font-size: 20px;
+    color: #FF8D70;
+}
+
+.UserPage__header-button-income {
+    padding: 15px 30px;
+    border-radius: 15px;
+    background-color: rgba(138, 255, 185, 0.16);
+    letter-spacing: 2px;
+    font-family: 'Hero';
+    color: #8AFFB9;
+    font-size: 17px;
+}
+
+.UserPage__header-button-income span {
+    background-color: rgba(255, 0, 0, 0.01);
+    font-size: 20px;
+    color: #8AFFB9;
+}
+
+.UserPage__header-title-popup-block {
+    width: 280px;
+    height: 65px;
+    background-color: #fff;
+    border-radius: 20px;
+    position: absolute;
+    top: 95px;
+    left: 136px;
+    transition: .3s;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.UserPage__header-title-popup-wrapper p {
+    color: #6fb98f;
+}
+
+.UserPage__header-title-popup-block button {
+    width: 100%;
+    height: 70%;
+    background-color: inherit;
+    color: #000000;
+    letter-spacing: 1px;
+    font-family: 'Hero';
+    text-align: left;
+    transition: .2s;
+    border-radius: 10px;
+    padding-left: 10px;
+    transition: .3s;
+}
+
+.UserPage__header-title-popup-block button:hover {
+    background-color: rgb(233, 233, 233);
+}
+
+.UserPage__header-setting button {
+    background-color: rgba(72, 72, 72);
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.UserPage__header-setting button img {
+    width: 24px;
+    height: 24px;
+    background-color: inherit;
+}
+
+.UserPage__header-title-profile {
+    height: 140px;
+    width: 300px;
+    position: absolute;
+    top: 90px;
+    right: 70px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.UserPage__header-setting-button.active {
+    background-color: rgb(93, 93, 93);
+}
+
+.active-marker {
+    background-color: #6fb98f;
+    position: absolute;
+    top: 40px;
+    right: 47px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50px;
+    opacity: 1;
+}
+
+.active-marker.disable {
+    opacity: 0;
+}
+
+
+.UserPage__header-title-profile-gmail {
+    padding: 20px;
+    width: 100%;
+    background-color: #EDF4F7;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.UserPage__header-title-profile-gmail p {
+    background-color: inherit;
+    color: #000000;
+    font-size: 15px;
+    font-family: 'Hero';
+    letter-spacing: 1.5px;
+}
+
+.UserPage__header-title-profile-page {
+    padding: 10px 20px;
+    background-color: inherit;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.UserPage__header-title-profile-page-title {
+    background-color: inherit;
+    padding: 15px 15px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.UserPage__header-title-profile-page-title p {
+    background-color: inherit;
+    color: #000000;
+    font-family: 'Hero';
+    letter-spacing: 1.5px;
+}
+
+.UserPage__header-title-profile-page-title:hover {
+    background-color: #EDF4F7;
+}
+
+.UserPage__header-title-profile-page-exit {
+    background-color: inherit;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.2);
+}
+
+.UserPage__header-title-profile-page-exit button {
+    background-color: inherit;
+    color: #000000;
+    padding: 15px 15px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    gap: 5px;
+    justify-content: flex-start;
+    transition: .3s;
+}
+
+.UserPage__header-title-profile-page-exit button:hover {
+    background-color: #EDF4F7;
+}
+
+.wrapper__loader-logo {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

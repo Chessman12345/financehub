@@ -49,6 +49,7 @@ function RegisterPage() {
 
       await set(ref(database, "users/" + user.uid), {
         uid: user.uid,
+        name: "Пользователь",
         email: user.email,
       });
 
@@ -81,7 +82,7 @@ function RegisterPage() {
             <h2>Зарегестрироваться</h2>
           </div>
           <div className="RegisterPage__main-gmail">
-            <form onClick={handleRegister}>
+            <form onClick={handleRegister} className="form">
               <div className="RegisterPage__main-google">
                 <div className="RegisterPage__main-google-icon">
                   <img src={GoogleIcon} alt="" />

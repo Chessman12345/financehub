@@ -61,7 +61,7 @@
     width: 30px;
 }
 
-form {
+.form {
     width: 372px;
     display: flex;
     flex-direction: column;
